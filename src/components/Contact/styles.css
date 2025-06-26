@@ -284,6 +284,7 @@
     display: grid;
     align-items: center;
     justify-content: center;
+    height: auto;
   }
 
   .contact-detail-wrapper {
