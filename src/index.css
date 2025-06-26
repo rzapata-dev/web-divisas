@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/metropolis-2');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+:root{
+    --font-family-header-footer: 'Monserrat', sans-serif;
+    --font-weight-header-footer: 400;
+    --font-style-header-footer: normal;
+
+	--font-family-main: 'Arvo', sans-serif;
+	--font-weight-main: 300;
+	--font-style-main: normal;
+}
+
+

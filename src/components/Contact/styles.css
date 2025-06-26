@@ -1,0 +1,352 @@
+.contact-container {
+  background-color: #f1f4f4;
+  padding-top: 111px;
+  font-family: Arial, sans-serif;
+  height: auto;
+}
+
+.contact-header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-image: url('../../../src/assets/images/contact/contact_00.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.contact-header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: clamp(1.5rem, 5vw, 5rem);
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px); 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+.contact-title {
+  text-align: center;
+  padding: clamp(20px, 5vw, 40px);
+  font-family: 'Metropolis', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  max-width: 1015px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  gap: 15px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  height: 655px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+}
+
+.contact-detail-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: auto;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  padding: 10px;
+  gap: 5px;
+  word-wrap: break-word;
+}
+
+.contact-text p {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-text p,
+.contact-text h3 {
+  font-size: clamp(0.95rem, 2.2vw, 1.2rem);
+}
+
+.contact-map {
+  height: 500px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
+.contact-form-wrapper {
+  width: 50%;
+  padding: 20px;
+}
+
+.contact-form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form-wrapper label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form-wrapper textarea {
+  resize: vertical;
+}
+
+.contact-form-wrapper input,
+.contact-form-wrapper textarea {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form-wrapper input[type="text"],
+.contact-form-wrapper input[type="email"],
+.contact-form-wrapper input[type="tel"],
+.contact-form-wrapper textarea {
+  font-size: 16px;
+}
+
+.contact-form-wrapper small {
+  display: block;
+  margin-top: 5px;
+  color: #888;
+}
+
+.form-button {
+  display: block;
+  width: 55%;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #cc0020;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-container button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.loading {
+  font-style: italic;
+  color: #555;
+  margin-top: 10px;
+}
+
+.recaptcha-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  margin: 20px 0;
+}
+
+.g-recaptcha {
+  transform: scale(1);
+  transform-origin: 0 0;
+  width: 302px;
+  height: 78px;
+}
+
+/* Toastify: personalización básica de notificaciones */
+.Toastify__close-button {
+  width: 50% !important;
+  height: 50% !important;
+  font-size: 20px;
+  transform: scale(1.2);
+  background-color: #cc0020;
+}
+
+.Toastify__toast-body {
+  padding: 14px 20px !important;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Responsive menor a 1024px */
+@media (max-width: 1024px) {
+  .contact-info {
+    flex-direction: column;
+    width: 90%;
+    padding: 20px 10px;
+  }
+
+  .contact-details {
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-detail-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .contact-text {
+    width: auto;
+  }
+
+  .contact-icon {
+    width: 50px;
+  }
+
+  .contact-form-wrapper {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-container button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+/* Responsive tablet */
+@media screen and (max-width: 768px) {
+  .contact-container {
+    padding-top: 103px;
+  }
+}
+
+/* Responsive móviles medianos */
+@media (max-width: 600px) {
+  .contact-header-text {
+    font-size: 2rem;
+    padding: 5px 10px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .g-recaptcha {
+    transform: scale(0.8);
+    width: calc(302px * 0.8);
+    height: calc(78px * 0.8);
+  }
+}
+
+/* Móviles muy pequeños */
+@media (max-width: 350px) {
+  .g-recaptcha {
+    transform: scale(0.7);
+    width: calc(302px * 0.7);
+    height: calc(78px * 0.7);
+  }
+}

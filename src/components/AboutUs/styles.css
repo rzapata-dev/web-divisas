@@ -1,0 +1,160 @@
+.AboutUs__Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch; /* Alinea alturas de los hijos */
+  height: 625px;
+  background-color: #ECF3F1;
+  font-family: var(--font-family-header-footer);
+}
+
+.AboutUs__Content {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0 50px;
+}
+
+.About__img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.AboutUs__Text {
+  flex: 1 1 auto;
+  width: 100%;
+  background-color: #F0F5F4;
+  text-align: center;
+  color: #333;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.AboutUs__heading {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #444;
+}
+
+.AboutUs__tagline {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin: 10px 0 18px;
+  line-height: 1.2;
+  color: #000;
+}
+
+.AboutUs__Text span {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #484848;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.AboutUs__Text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  text-align: justify;
+  color: #1a1a1a;
+}
+
+.AboutUs__Text a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0056b3;
+  margin-top: 15px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.AboutUs__Text a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Responsive*/
+
+@media (max-width: 1024px) {
+  .AboutUs__Container {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .AboutUs__Content {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0;
+    height: auto;
+  }
+
+  .AboutUs__Text {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .About__img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+
+  .AboutUs__Text h2 {
+    font-size: 1.6rem;
+  }
+
+  .AboutUs__Text p {
+    font-size: 0.95rem;
+  }
+
+  .AboutUs__Text a {
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+/* Ajustes específicos móviles */
+
+@media (max-width: 800px) {
+  .AboutUs__Container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .AboutUs__heading {
+    font-size: 0.9rem;
+  }
+
+  .AboutUs__tagline {
+    font-size: 1.5rem;
+  }
+
+  .AboutUs__Text span {
+    font-size: 1rem;
+  }
+
+  .AboutUs__Text p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .AboutUs__Text a {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}

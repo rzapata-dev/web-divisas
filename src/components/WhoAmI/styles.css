@@ -1,0 +1,195 @@
+.Who__Container {
+    width: 100%;
+    height: auto;
+    background-color: #f1f4f4;
+    padding-top: 111px;
+    padding-bottom: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.Who__Imagen {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-image: url(../../../src/assets/images/whoami/about_00.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.Who__OverlayText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: clamp(1.5rem, 5vw, 5rem);
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px); /* Da nitidez al texto sin eliminar el fondo */
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.Who__content {
+    background-color: #F8F9FA;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Who__p {
+    background-color: #0A1A2F;
+    color: #FFF;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.6;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    background-size: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Who__p p {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(77, 75, 75, 0.6); 
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.Who__p p:hover {
+    transform: scale(1.05); /* Animacion sin saturar */
+}
+
+.Who__titule {
+    font-size: 2rem;
+    text-align: center;
+    color: #1D3557;
+    margin: 40px 0 20px;
+}
+
+.who__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: #F0F0F0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.who__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFFFFF;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.who__item:hover {
+    transform: scale(1.05); /* hace mas interesate la tarjeta */
+}
+
+.who__item__content h4 {
+    font-size: 1.5rem;
+    color: #1D3557;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.who__item__content span {
+    font-size: 1rem;
+    color: #4F4F4F;
+    text-align: center;
+}
+
+.who__item_image {
+    width: 100%;
+    aspect-ratio: 16/9; /* Mantiene proporciones visualmente armónicas, no olvidar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.who__item_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Se adapta al contenedor sin deformarse */
+    border-radius: 5px;
+}
+
+/* --- MEDIA QUERIES ---  */
+
+@media screen and (max-width: 768px) {
+    .Who__Container {
+        padding-top: 103px;
+    }
+
+    .Who__OverlayText {
+        font-size: 2rem;
+        padding: 6px 12px;
+    }
+
+    .Who__content {
+        padding: 20px;
+    }
+
+    .Who__p {
+        font-size: 1.1rem;
+        padding: 20px;
+    }
+
+    .Who__p p {
+        font-size: 1rem;
+    }
+
+    .who__item {
+        max-width: 100%;
+    }
+
+    .who__lista {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Who__OverlayText {
+        font-size: 1.6rem;
+    }
+
+    .Who__titule {
+        font-size: 1.5rem;
+    }
+
+    .Who__p {
+        font-size: 1rem;
+    }
+
+    .who__item__content h4 {
+        font-size: 1.2rem;
+    }
+
+    .who__item__content span {
+        font-size: 0.95rem;
+    }
+}

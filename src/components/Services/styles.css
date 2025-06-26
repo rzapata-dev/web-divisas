@@ -1,0 +1,213 @@
+.Services__division {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    height: 410px;
+    background-image: url(../../../src/assets/images/home/services_00.jpg);
+    background-size: cover;
+    background-position: center;
+
+    padding: 40px 20px;
+    position: relative;
+    z-index: 1;
+
+    font-family: var(--font-family-header-footer);
+    font-weight: var(--font-weight-header-footer);
+    font-style: var(--font-style-header-footer);
+}
+
+.Services__Titulo {
+    font-size: 4rem;
+    color: rgba(5, 15, 34, 1);
+    font-weight: bold;
+    background-color: rgba(238, 238, 238, 0.6);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    border-radius: 10px; 
+    border: 0 solid rgba(5, 15, 34, 0.5);
+}
+
+.Services__Titulo h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.Services__Titulo h6 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.Services__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #ECF3F1;
+    position: relative;
+    margin-top: -100px; 
+    font-family: var(--font-family-header-footer);
+}
+
+.Services__Content {
+    z-index: 2;
+    margin-bottom: 50px;
+}
+
+.Services__List {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.Services__List img {
+    width: 370px;
+    border-radius: 5px 5px 0 0;
+}
+
+.Services__List h4 {
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    background-color: rgb(216, 228, 224);
+    font-size: 1.5rem;
+    max-width: 330px;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+}
+
+.Services__Item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.Services__Item img {
+    transition: transform 0.3s ease; /*  zoom al pasar el mouse */
+}
+
+.Services__Item img:hover {
+    transform: scale(1.03);
+}
+
+.Services__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    padding: 30px 0;
+    background-color: rgb(216, 228, 224);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: var(--font-family-header-footer);
+    font-weight: var(--font-weight-header-footer);
+    font-style: var(--font-style-header-footer);
+}
+
+.Services__footerList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0 5px;
+    text-align: center;
+}
+
+.Services__footerItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.Services__footerText {
+    display: flex;
+    flex-direction: column;
+    max-width: 370px;
+    gap: 20px;
+    color: black;
+    padding: 0 10px;
+}
+
+.Services__footerText h5 {
+    font-weight: bold;
+}
+
+.Services__footerText a {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    margin-right: 60px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    .Services__container {
+        margin-top: 0;
+    }
+
+    .Services__List {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .Services__footerList {
+        flex-direction: column;
+    }
+
+    .Services__List h4 {
+        width: auto;
+    }
+
+    .Services__List img,
+    .Services__footerText {
+        width: 90%;
+    }
+
+    .Services__footerItem {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Services__footerText a {
+        margin: 0;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Services__division {
+        height: 300px;
+    }
+
+    .Services__Titulo {
+        font-size: 2rem;
+        padding: 20px;
+    }
+
+    .Services__Titulo h2 {
+        font-size: 1.7rem;
+    }
+
+    .Services__Titulo h3,
+    .Services__Titulo h6 {
+        font-size: 1rem;
+    }
+
+    .Services__footerText p {
+        font-size: 0.95rem;
+    }
+
+    .Services__List h4 {
+        font-size: 1.2rem;
+    }
+}
