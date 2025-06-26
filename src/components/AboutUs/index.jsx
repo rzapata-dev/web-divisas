@@ -2,7 +2,7 @@
 import './styles.css';
 import { Link } from 'react-router-dom';
 
-
+import aboutUsImg1 from '../../../src/assets/images/home/services_01.jpg';
 
 const AboutUs = () => {
     return (
@@ -22,7 +22,7 @@ const AboutUs = () => {
             </div>
             </div>
 
-           <img className='About__img' src='../../../src/assets/images/home/home_about_01.jpg' alt="Descripción" />
+           <img className='About__img' src={aboutUsImg1} alt="Descripción dos manos estrechandoze entre si" />
             
             
         </div>
