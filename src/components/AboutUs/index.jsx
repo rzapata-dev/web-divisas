@@ -2,7 +2,7 @@
 import './styles.css';
 import { Link } from 'react-router-dom';
 
-import aboutUsImg1 from '../../../src/assets/images/home/services_01.jpg';
+import aboutUsImg1 from '../../../src/assets/images/home/home_about_01.jpg';
 
 const AboutUs = () => {
     return (
