@@ -16,7 +16,9 @@ const WhoAmI = () => {
           </div>
         </div>
         <div className="Who__content">
-        <div className="Who__p"><p>¡Hola y bienvenido(a) a nuestra web, estamos encantados de conocerte! Somos un equipo dedicado al intercambio de divisas con más de 30 años de experiencia y estamos convencidos de que podemos a ayudarte a encontrar la moneda que buscas a un excelente tipo de cambio, con rapidez y seguridad. Puedes escoger entre diversas modalidades de entrega. Cambia soles y dólares presencial o, si necesitas otra moneda para tu viaje, recoge en nuestra tienda o recibe en tu casa u oficina. Nos aseguraremos de que tengas la mejor experiencia posible</p></div>
+        <div className="Who__p"><p> <strong>¡Bienvenido a J & R Dólares y Euros!</strong> <br />
+              Con más de 30 años de experiencia y raíces familiares, te ofrecemos un servicio cercano, seguro y transparente. Cambia soles, dólares o monedas extranjeras con la tranquilidad de saber que verificamos cada transacción con un sistema exclusivo de autenticación que respalda su validez. Además, te orientamos sobre el tipo de cambio y cómo reconocer billetes falsos. Aquí no solo haces un cambio: ganas confianza, asesoría y respaldo en cada visita.</p>
+              </div>
 
           <div className="Who__titule"><h3>¿Por qué elegirnos?</h3></div>
           <div className="who__lista">

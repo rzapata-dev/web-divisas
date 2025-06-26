@@ -14,10 +14,8 @@ const AboutUs = () => {
                 <div className="AboutUs__heading">¿QUIÉNES SOMOS?</div>
                 <div className="AboutUs__tagline">Cambiamos más que divisas, conectamos oportunidades</div>
 
-                <span>Desde 1997</span>
-                <p><strong>J & R Dólares y Euros</strong> va más allá del intercambio de monedas: construimos      puentes  hacia el crecimiento y las oportunidades. 
-                        Desde nuestra fundación en 1997, nos hemos comprometido a servir a nuestra comunidad local con dedicación, priorizando la confianza, el servicio personalizado y las interacciones cara a cara para satisfacer tus necesidades de cambio de divisas.
-                        Nuestra misión es simple: ofrecer soluciones seguras, eficientes y sin complicaciones mientras fortalecemos conexiones significativas. En J & R Dólares y Euros, “Cambiamos más que divisas, conectamos oportunidades” es más que un lema: es nuestra promesa para ti.</p>
+                <span>Desde 1996</span>
+                <p> Fundada en 1996 por dos hermanos, J & R Dólares y Euros nace con una misión clara: inspirar confianza y brindar seguridad en cada transacción. Más que una casa de cambio, somos una empresa con raíces familiares y un compromiso firme con la transparencia, el respeto y la atención personalizada. Cada operación se valida mediante protocolos únicos de autenticación, diseñados para garantizar la legitimidad de los billetes y la tranquilidad de quienes nos eligen. Además de ofrecer tipos de cambio competitivos, educamos a nuestros clientes para reconocer billetes falsos y tomar decisiones informadas frente al comportamiento del mercado. Estamos certificados por la SBS y cumplimos con los más altos estándares legales y operativos. </p>
                     <Link className="nav__link"  to="/whoami">MÁS DETALLES</Link>
             </div>
             </div>
